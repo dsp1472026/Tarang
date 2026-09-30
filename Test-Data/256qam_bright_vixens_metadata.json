@@ -1,0 +1,28 @@
+{
+    "message": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "modulation": "256-QAM",
+    "qam_order": 256,
+    "bits_per_symbol": 8,
+    "original_bits": 280,
+    "padding_bits": 0,
+    "total_bits_after_padding": 280,
+    "qam_symbols": 35,
+    "samples_per_symbol": 8,
+    "iq_sample_rate_hz": 9600,
+    "audio_sample_rate_hz": 48000,
+    "carrier_frequency_hz": 6000,
+    "symbol_rate_baud": 1200,
+    "rrc_rolloff": 0.35,
+    "iq_samples": 280,
+    "wav_samples": 1400,
+    "duration_seconds": 0.029166666666666667,
+    "duration_milliseconds": 29.166666666666668,
+    "iq_int16_format": "Interleaved I,Q signed int16",
+    "iq_float32_format": "Interleaved I,Q float32",
+    "wav_format": "Mono 16-bit PCM",
+    "files": {
+        "iq_int16": "256qam_bright_vixens.iq",
+        "iq_float32": "256qam_bright_vixens_f32.iq",
+        "wav": "256qam_bright_vixens.wav"
+    }
+}

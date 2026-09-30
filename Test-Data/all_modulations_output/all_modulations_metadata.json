@@ -1,0 +1,353 @@
+[
+    {
+        "modulation": "BPSK",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 280,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\BPSK.iq",
+            "float32_iq_file": "modulation_output\\BPSK_f32.iq",
+            "iq_sample_count": 2240,
+            "interleaved_value_count": 4480
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\BPSK.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 11200,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 2240,
+            "signal_max_amplitude": 0.5584815641075599,
+            "signal_min_amplitude": 5.204170427930421e-18,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "QPSK",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 140,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\QPSK.iq",
+            "float32_iq_file": "modulation_output\\QPSK_f32.iq",
+            "iq_sample_count": 1120,
+            "interleaved_value_count": 2240
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\QPSK.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 5600,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 1120,
+            "signal_max_amplitude": 0.513443314043068,
+            "signal_min_amplitude": 0.0075306601034594405,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "8PSK",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 94,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\8PSK.iq",
+            "float32_iq_file": "modulation_output\\8PSK_f32.iq",
+            "iq_sample_count": 752,
+            "interleaved_value_count": 1504
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\8PSK.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 3760,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 752,
+            "signal_max_amplitude": 0.5029028118904569,
+            "signal_min_amplitude": 0.009499089119554152,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "16QAM",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 70,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\16QAM.iq",
+            "float32_iq_file": "modulation_output\\16QAM_f32.iq",
+            "iq_sample_count": 560,
+            "interleaved_value_count": 1120
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\16QAM.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 2800,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 560,
+            "signal_max_amplitude": 0.4353304360156581,
+            "signal_min_amplitude": 0.0046143013392630884,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "64QAM",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 47,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\64QAM.iq",
+            "float32_iq_file": "modulation_output\\64QAM_f32.iq",
+            "iq_sample_count": 376,
+            "interleaved_value_count": 752
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\64QAM.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 1880,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 376,
+            "signal_max_amplitude": 0.4265080495747203,
+            "signal_min_amplitude": 0.010714990609835327,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "256QAM",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 35,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\256QAM.iq",
+            "float32_iq_file": "modulation_output\\256QAM_f32.iq",
+            "iq_sample_count": 280,
+            "interleaved_value_count": 560
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\256QAM.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 1400,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 280,
+            "signal_max_amplitude": 0.40668052901054647,
+            "signal_min_amplitude": 0.008497234098114865,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "BFSK",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 280,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\BFSK.iq",
+            "float32_iq_file": "modulation_output\\BFSK_f32.iq",
+            "iq_sample_count": 2240,
+            "interleaved_value_count": 4480
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\BFSK.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 11200,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 2240,
+            "signal_max_amplitude": 1.0000000000000002,
+            "signal_min_amplitude": 0.9999999999999999,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "4FSK",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 140,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\4FSK.iq",
+            "float32_iq_file": "modulation_output\\4FSK_f32.iq",
+            "iq_sample_count": 1120,
+            "interleaved_value_count": 2240
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\4FSK.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 5600,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 1120,
+            "signal_max_amplitude": 1.0000000000000002,
+            "signal_min_amplitude": 0.9999999999999998,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    },
+    {
+        "modulation": "8FSK",
+        "input_text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+        "input_text_length": 35,
+        "input_bit_count": 280,
+        "symbol_count": 94,
+        "baud_rate": 1200,
+        "samples_per_symbol": 8,
+        "baseband_sample_rate": 9600,
+        "wav_sample_rate": 48000,
+        "carrier_frequency": 6000,
+        "rrc_beta": 0.35,
+        "rrc_span": 10,
+        "signal_type": "complex baseband",
+        "iq_format": "interleaved I,Q",
+        "iq_information": {
+            "int16_iq_file": "modulation_output\\8FSK.iq",
+            "float32_iq_file": "modulation_output\\8FSK_f32.iq",
+            "iq_sample_count": 752,
+            "interleaved_value_count": 1504
+        },
+        "wav_information": {
+            "wav_file": "modulation_output\\8FSK.wav",
+            "wav_sample_rate": 48000,
+            "wav_sample_count": 3760,
+            "wav_channels": 1,
+            "wav_format": "16-bit PCM"
+        },
+        "verification": {
+            "signal_is_complex": true,
+            "signal_sample_count": 752,
+            "signal_max_amplitude": 1.0000000000000002,
+            "signal_min_amplitude": 0.9999999999999999,
+            "iq_file_created": true,
+            "float32_iq_file_created": true,
+            "wav_file_created": true,
+            "all_files_created": true
+        }
+    }
+]

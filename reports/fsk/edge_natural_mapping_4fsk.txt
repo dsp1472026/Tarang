@@ -1,0 +1,37 @@
+========================================================================
+FSK DEMODULATION REPORT
+========================================================================
+File: edge_natural_mapping_4fsk.iq
+Intended: 4FSK, M=4, h=0.5, pulse=rect, Rs=10000, payload='HELLO WORLD FSK'
+------------------------------------------------------------------------
+Detection      : UNCERTAIN (envelope excess CV 0.186, p_fsk 0.21)
+Classification : 4FSK
+  Evidence     : Envelope CV 0.212 vs 0.102 expected from noise alone (in-band SNR 16.8 dB, noise from guard samples) -> excess 0.186: inconclusive
+                 PSD shows 1 distinct peak(s) (tones resolve in the PSD only for larger h; evidence only)
+                 Tone grid: M=4, h=0.499, pulse rect, re-modulation match 0.833
+                 Family resolved as FSK by demodulation evidence (sync/CRC: True, re-modulation match 0.833)
+Parameters     :
+  Tone count M      : 4   [joint (M, pulse) re-modulation match; IF-strobe M-level fits as evidence]
+  Symbol rate       : 9997.56 Bd  [IF transition / power-law lines, re-modulation refined (refined best line)]
+  Samples/symbol    : 20.0049 samples  [IF transition / power-law lines, re-modulation refined (refined best line)]
+  Modulation index h: 0.499381   [tone spacing / Rs, refined by re-modulation]
+  Tone spacing      : 4992.59 Hz  [h * Rs]
+  Peak deviation    : 7488.89 Hz  [(M-1) h Rs / 2]
+  Carrier offset    : 785.75 Hz  [occupied-band centre + tone-grid centre]
+  Pulse shape       : rect   [re-modulation match over rect / Gaussian BT hypotheses]
+  Phase continuity  : continuous (CPFSK)   [mean |IF| per symbol-phase bin (unfiltered)]
+  Es/N0             : 19.991 dB  [re-modulation residual (noise per sample x sps)]
+Sync           :
+  Boundary     : sample 6.01 of the burst (sps 20.005)
+Demodulation   :
+  discriminator  : sync-word      mapping 'natural', CRC VALID, frame BER 0/248
+  correlator     : sync-word      mapping 'natural', CRC VALID, frame BER 0/248
+  coherent-bcjr  : sync-word      mapping 'natural', CRC VALID, frame BER 0/248
+  Primary      : coherent-bcjr
+  Hard bits    : 101111100111001111101110...
+  Soft bits    : -2.70, +4.04, -6.78, -2.70, -22.00, -36.28, ... (LLR = ln P0/P1)
+  BER          : 0.00% (0/248)
+  FSK error    : 8.1% (RMS IF error / peak deviation)
+  Decoded      : 'HELLO WORLD FSK'
+  Status       : PASS
+------------------------------------------------------------------------

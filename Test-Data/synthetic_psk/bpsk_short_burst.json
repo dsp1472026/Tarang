@@ -1,0 +1,65 @@
+{
+  "format": {
+    "files": {
+      "bpsk_short_burst.iq": "ci16_le",
+      "bpsk_short_burst_f32.iq": "cf32_le"
+    },
+    "interleaving": "IQIQ",
+    "sample_rate_hz": 9600.0,
+    "center_frequency_hz": 0.0,
+    "num_samples": 2112
+  },
+  "truth": {
+    "generator": "synthetic.generator v1",
+    "modulation": "BPSK",
+    "family": "PSK",
+    "bits_per_symbol": 1,
+    "mapping": "gray; angle = phi0 + 2*pi*k/M, label = k ^ (k >> 1)",
+    "constellation_points": {
+      "0": [
+        -1.0,
+        1.2246467991473532e-16
+      ],
+      "1": [
+        1.0,
+        -2.4492935982947064e-16
+      ]
+    },
+    "differential": false,
+    "framed": true,
+    "frame_layout": {
+      "total_bits": 216,
+      "sync_bits": 96,
+      "header_bits": 16,
+      "payload_bits": 88,
+      "crc_bits": 16,
+      "pad_bits": 0
+    },
+    "payload_text": "HELLO WORLD",
+    "payload_hex": "48454c4c4f20574f524c44",
+    "frame_bits": "111111100000010000011000010100011110010001011001110101001111101000011100010010011011010110111101000000000000101101001000010001010100110001001100010011110010000001010111010011110101001001001100010001001011011101110010",
+    "num_data_symbols": 216,
+    "first_symbol_sample": 198.4,
+    "symbol_rate_hz": 1200.0,
+    "sample_rate_hz": 9600.0,
+    "samples_per_symbol": 8.0,
+    "rrc_beta": 0.35,
+    "rrc_span": 10,
+    "guard_symbols": 24,
+    "impairments": {
+      "esn0_db": 17.0,
+      "cfo_hz": 12.0,
+      "phase_deg": -33.0,
+      "timing_offset": 0.8,
+      "clock_ppm": 0.0,
+      "dc_offset": [
+        0.0,
+        0.0
+      ],
+      "gain": 1.0,
+      "seed": 60,
+      "per_sample_snr_db": 7.969100130080564,
+      "noise_var_per_symbol": 0.0199526231496888
+    }
+  }
+}

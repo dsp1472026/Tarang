@@ -1,0 +1,61 @@
+{
+  "model_version": "cnn-modulation-v2",
+  "training_dataset": "RadioML 2018.01A",
+  "model_type": "1D-CNN (4 conv blocks, GlobalAvgPool)",
+  "num_classes": 24,
+  "class_names": [
+    "OOK",
+    "4ASK",
+    "8ASK",
+    "BPSK",
+    "QPSK",
+    "8PSK",
+    "16PSK",
+    "32PSK",
+    "16APSK",
+    "32APSK",
+    "64APSK",
+    "128APSK",
+    "16QAM",
+    "32QAM",
+    "64QAM",
+    "128QAM",
+    "256QAM",
+    "AM-DSB-WC",
+    "AM-DSB-SC",
+    "AM-SSB-WC",
+    "AM-SSB-SC",
+    "FM",
+    "GMSK",
+    "OQPSK"
+  ],
+  "iq_length": 128,
+  "epochs_trained": 3,
+  "best_val_accuracy": 0.2094017094017094,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "device": "cpu",
+  "created_date": "2026-09-08 13:32:24",
+  "history": {
+    "train_loss": [
+      2.940506263530298,
+      2.616136575356508,
+      2.4388781502133323
+    ],
+    "val_loss": [
+      2.931404266601954,
+      2.464314130636362,
+      2.422505721067771
+    ],
+    "val_acc": [
+      0.12713675213675213,
+      0.2013888888888889,
+      0.2094017094017094
+    ],
+    "epoch_time": [
+      16.98644733428955,
+      21.977887630462646,
+      21.648728609085083
+    ]
+  }
+}

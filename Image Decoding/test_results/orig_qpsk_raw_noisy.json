@@ -1,0 +1,21 @@
+{
+  "format": {
+    "files": {
+      "orig_qpsk_raw_noisy.iq": "ci16_le"
+    },
+    "interleaving": "IQIQ",
+    "sample_rate_hz": 1000000.0,
+    "center_frequency_hz": 0.0,
+    "num_samples": 2027896
+  },
+  "truth": {
+    "generator": "Space Downlink Simulator signal path (c.py), test copy",
+    "image": "Orginal.png",
+    "max_dim": 256,
+    "payload": "raw RGB",
+    "modulation": "QPSK",
+    "symbol_rate_bd": 250000.0,
+    "if_offset_hz": 250000.0,
+    "snr_db": 14.0
+  }
+}

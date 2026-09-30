@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sih26147"
+version = "0.1.0"
+description = "Automated Signal Analysis System for .IQ and .wav Files (SIH PS 26147)"
+authors = [{ name = "Signal Processing Engineering Team" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "PyQt6>=6.5.0",
+    "pyqtgraph>=0.13.0",
+    "torch>=2.0.0",
+    "reedsolo>=1.7.0",
+    "ldpc>=0.1.50",
+    "h5py>=3.8.0",
+    "pyyaml>=6.0",
+    "pytest>=7.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = "."

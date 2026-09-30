@@ -1,0 +1,25 @@
+{
+  "format": {
+    "files": {
+      "img_test_16x16_16qam.iq": "ci16_le",
+      "img_test_16x16_16qam_f32.iq": "cf32_le"
+    },
+    "interleaving": "IQIQ",
+    "sample_rate_hz": 9600.0,
+    "center_frequency_hz": 0.0,
+    "num_samples": 27448
+  },
+  "truth": {
+    "generator": "synthetic.tx_image v1",
+    "modulation": "16QAM",
+    "fec": "CC K=7 (171,133) r1/2 [NASA/CCSDS]",
+    "payload_file": "test_16x16.jpg",
+    "payload_bytes": 833,
+    "frame_bytes": 845,
+    "transmitted_bits": 13532,
+    "symbol_rate_hz": 1200.0,
+    "samples_per_symbol": 8,
+    "snr_db_esn0": 25.0,
+    "seed": 26147
+  }
+}

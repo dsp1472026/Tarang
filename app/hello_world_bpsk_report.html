@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>SIH 26147 - Automated Signal Analysis Report</title><style>body{font-family:Segoe UI,Arial,sans-serif;margin:18px;color:#1d2433;background:#fff}h1{font-size:20px;margin:0 0 4px}h2{font-size:15px;margin:18px 0 6px;border-bottom:1px solid #d0d7e2;padding-bottom:3px;color:#1f497d}table{border-collapse:collapse;margin:6px 0;font-size:12px}td,th{border:1px solid #d0d7e2;padding:3px 7px;text-align:left;vertical-align:top}th{background:#eef2f8}.ok{color:#1a7f37;font-weight:bold}.bad{color:#b42318;font-weight:bold}.mono{font-family:Consolas,monospace}.box{background:#f5f7fb;border:1px solid #d0d7e2;padding:8px 10px}ul{margin:4px 0 4px 18px;padding:0}li{margin:2px 0;font-size:12px}</style></head><body>
+<h1>SIH 26147 - Automated Signal Analysis Report</h1><div>Generated 2026-09-29T23:03:37</div>
+<h2>Result</h2><div class='box'>
+<div>Status: <span class='bad'>UNVERIFIED</span></div>
+<div>Decoded payload: <span class='mono'>HELLO WORLD</span></div>
+<div>Processing chain: BPSK -&gt; de-interleave diag: 29 x 3 diagonal (down-right), offset 0 -&gt; Hamming(15,11)</div>
+<div>Overall confidence: 0.4</div></div>
+<h2>Input</h2><ul>
+<li>File: <span class='mono'>hello_world_bpsk.wav</span> (880 complex samples), sample type auto</li>
+<li>Sample rate 12,000 Hz - WAV header (KNOWN)</li>
+<li>WAV 1 ch @ 48000 Hz</li>
+<li>real passband: analytic signal (FFT Hilbert), carrier ~6000.0 Hz (occupied-band centre), 97% bandwidth 1688 Hz, mixed to 0 Hz, decimated x4 -&gt; 12000 Hz</li>
+</ul>
+<h2>Modulation</h2><div>PSK / <b>BPSK</b> (confidence 1.0)</div><ul>
+<li>Envelope: CV 0.409, noise-corrected excess 0.409 -&gt; varying envelope (log-odds FSK -6.0)</li>
+<li>Sample cumulants |C20|=1.00 |C40|=1.59 C42=-1.59: x^2/x^4 keep a DC term -&gt; linear modulation (log-odds -4.0)</li>
+<li>IF kurtosis: gated 3.12 (raw 16.5); inconclusive (log-odds +0.0)</li>
+<li>IF histogram (64 bins): 2 peak(s) at +0.00, +0.00 x BW, density at 0 Hz 0.54 of max (log-odds +0.0)</li>
+<li>Cyclic lines: symmetric tone pair in x^1 -&gt; FSK tones (log-odds +1.5)</li>
+<li>M-th power line: strongest single line rho=1.00 in x^2 -&gt; x^2 is a pure carrier: BPSK (any pulse shape) (log-odds -8.0)</li>
+<li>Phase histogram (64 bins): 2 cluster(s) -&gt; power-of-two phase set (PSK-like) (log-odds FSK -1.0)</li>
+<li>Amplitude histogram (128 bins): 9 level(s) -&gt; multi-level envelope (QAM-like) (log-odds FSK -0.5)</li>
+<li>Family: linear (PSK/QAM) (P = 1.000)</li>
+<li>Front end: 10.007 sps, 87 symbols; lattice residual 0.013 (best fit BPSK; &lt; 0.15 = clean constellation)</li>
+</ul>
+<h2>Parameters (provenance)</h2><table><tr><th>Parameter</th><th>Value</th><th>Unit</th><th>Source</th><th>Method</th><th>Confidence</th></tr>
+<tr><td>Sample rate</td><td class='mono'>12,000</td><td>Hz</td><td>KNOWN</td><td>WAV header; WAV 1 ch @ 48000 Hz; real passband: analytic signal (FFT Hilbert), carrier ~6000.0 Hz (occupied-band centre), 97% bandwidth 1688 Hz, mixed to 0 Hz, decimated x4 -&gt; 12000 Hz</td><td></td></tr>
+<tr><td>Passband carrier</td><td class='mono'>6,000</td><td>Hz</td><td>ESTIMATED</td><td>occupied-band centre of the analytic WAV signal</td><td></td></tr>
+<tr><td>Samples/symbol</td><td class='mono'>10.0008</td><td>samples</td><td>ESTIMATED</td><td>-3 dB bandwidth + cyclic lines, hypotheses scored by strobe compactness</td><td>1.0</td></tr>
+<tr><td>RRC roll-off</td><td class='mono'>0.5</td><td></td><td>ESTIMATED</td><td>decision-directed min-EVM over candidates (PSD fit as initial value)</td><td>0.71383</td></tr>
+<tr><td>Symbol rate</td><td class='mono'>1,199.9</td><td>Bd</td><td>ESTIMATED</td><td>cyclic line + Oerder-Meyr refinement + decision-directed rate scan</td><td>1.0</td></tr>
+<tr><td>Carrier offset</td><td class='mono'>0.00205104</td><td>Hz</td><td>ESTIMATED</td><td>PSD -3 dB midpoint + 2th-power line + costas-bpsk PLL</td><td>0.999987</td></tr>
+<tr><td>Es/N0 (MER)</td><td class='mono'>41.9695</td><td>dB</td><td>ESTIMATED</td><td>decision-directed MER after sync</td><td></td></tr>
+<tr><td>Modulation</td><td class='mono'>BPSK</td><td></td><td>ESTIMATED</td><td>unified DSP decision tree (envelope, cumulants, IF histogram/kurtosis, cyclic lines; symbol-level ALRT over PSK/QAM)</td><td>1.0</td></tr>
+<tr><td>Decoded payload</td><td class='mono'>HELLO WORLD</td><td></td><td>ESTIMATED</td><td>text-heuristic; CRC not valid / no frame</td><td>0.5</td></tr>
+</table>
+<h2>Bitstream (L8)</h2><div>88 bits (receiver output (text-heuristic)); frame length estimate 84; blind convolutional estimate: none</div>
+<table><tr><th>Sync word</th><th>Offset</th><th>Hamming</th><th>Hard corr</th><th>Soft corr</th><th>LRT</th><th>GLRT</th><th>Threshold</th><th>Occ.</th><th>P(emulation)</th><th>Detected</th></tr>
+<tr><td>0xFAF33420 (CCSDS rate-1/2 ASM)</td><td>8</td><td>8/32</td><td>0.5</td><td>0.500006</td><td>-320933.0</td><td>-320955.0</td><td>3</td><td>0</td><td>3.99e-01</td><td class=''>no</td></tr>
+<tr><td>CCSDS ASM 0x1ACFFC1D</td><td>45</td><td>10/32</td><td>0.375</td><td>0.376509</td><td>-398805.0</td><td>-398828.0</td><td>3</td><td>0</td><td>1.00e+00</td><td class=''>no</td></tr>
+<tr><td>Telemetry marker 0xD3917E42</td><td>17</td><td>10/32</td><td>0.375</td><td>0.374635</td><td>-401234.0</td><td>-401256.0</td><td>3</td><td>0</td><td>1.00e+00</td><td class=''>no</td></tr>
+<tr><td>PCM sync 0xEB90</td><td>9</td><td>4/16</td><td>0.5</td><td>0.501183</td><td>-160148.0</td><td>-160159.0</td><td>-1</td><td>0</td><td>1.00e+00</td><td class=''>no</td></tr>
+<tr><td>0xF628 (IRIG/PCM)</td><td>37</td><td>4/16</td><td>0.5</td><td>0.501203</td><td>-160089.0</td><td>-160100.0</td><td>-1</td><td>0</td><td>1.00e+00</td><td class=''>no</td></tr>
+<tr><td>Header 0xAA55</td><td>38</td><td>4/16</td><td>0.5</td><td>0.501362</td><td>-160045.0</td><td>-160056.0</td><td>-1</td><td>0</td><td>1.00e+00</td><td class=''>no</td></tr>
+</table>
+<h2>De-interleaving (L9)</h2><div>Decision: <b>diag: 29 x 3 diagonal (down-right), offset 0</b> <span class=''>(not validated)</span>; 464 hypotheses tested</div>
+<table><tr><th>Bit stream</th><th>Type</th><th>Parameters</th><th>Offset</th><th>Strength</th><th>Detail</th><th>Validated</th></tr>
+<tr><td>receiver output (text-heuristic)</td><td>diag</td><td>29 x 3 diagonal (down-right)</td><td>0</td><td>0.081</td><td>conv syndrome 0.400, Hamming fail 0.20</td><td></td></tr>
+</table>
+<h2>FEC (L10)</h2><div>Decision: <b>Hamming(15,11)</b> - (15,11) binary linear block code, rate 11/15, systematic, corrects 1 error</div>
+<table><tr><th>FEC family</th><th>Probability</th></tr>
+<tr><td>Uncoded</td><td>0.99</td></tr>
+<tr><td>Convolutional code</td><td>0.00</td></tr>
+<tr><td>Block code (Hamming / RS)</td><td>0.00</td></tr>
+</table><ul>
+<li>Convolutional parity checks: best CC K=3 (7,7,5) r1/3 (phase 0) syndrome weight 0.370 (0.5 = random; 2 sigma)</li>
+<li>Block-code checks: best Hamming(15,11) (offset 0) syndrome failures 0.800 (1 sigma); RS blocks decoded 0%</li>
+<li>No sync word in clear</li>
+<li>Hamming(15,11) at offset 8: syndrome failures 0.200 (7 sigma below random); 1 single errors corrected, 0 uncorrectable blocks</li>
+</ul>
+<table><tr><th>Bit stream</th><th>Family</th><th>Code</th><th>Setting</th><th>Metric</th><th>Result</th><th>CRC frames</th></tr>
+<tr><td>receiver output (text-heuristic) | diag 29 x 3 diagonal (down-right)</td><td>Block (Hamming)</td><td>Hamming(15,11)</td><td>offset 8</td><td>syndrome failures 0.200</td><td>1 corrected, 0 uncorrectable</td><td>0</td></tr>
+</table>
+<h2>Framing (L11)</h2><div>Layout: not validated; CRC-valid frames 0/0 (0 layouts tested)</div>
+<table><tr><th>#</th><th>Start bit</th><th>Length</th><th>CRC</th><th>Valid</th><th>Text</th></tr>
+</table>
+<h2>Limitations</h2><ul>
+<li>FEC identification covers a library of convolutional codes (K 3-9, rate 1/2, 1/3, punctured 2/3, 3/4, 5/6), Reed-Solomon GF(2^8) profiles (p = 0x11D, fcr = 0), Hamming codes, LDPC codes with known parity-check matrices (IEEE 802.11 n=648 r3/4 and project-generated codes), blind LDPC parity-check recovery (needs more aligned error-free codewords than n) and RS + convolutional concatenated codes; turbo, BCH and polar codes are not identified.</li>
+<li>Pseudo-random interleavers: the LFSR address-generator family is searched and a rank-deficiency period without a structured interleaver is reported as a suspected PR interleaver; an arbitrary permutation is not reconstructed.</li>
+<li>Block interleavers larger than sqrt(N) bits are hypothesised from the burst length (a whole number of blocks) and accepted only when FEC + CRC validate.</li>
+<li>Convolutional (Forney) interleavers are searched for B &lt;= 16 branches and M &lt;= 16; diagonal interleavers over the same R x C hypotheses as block interleavers (both diagonal directions).</li>
+<li>A blind (ASSUMED) sample rate is a hypothesis: only samples/symbol is measured.</li>
+<li>Decoded content is VERIFIED only by a CRC; otherwise it is the best unverified hypothesis.</li>
+</ul></body></html>

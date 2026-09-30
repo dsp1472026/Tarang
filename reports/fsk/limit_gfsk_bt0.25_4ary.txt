@@ -1,0 +1,37 @@
+========================================================================
+FSK DEMODULATION REPORT
+========================================================================
+File: limit_gfsk_bt0.25_4ary.iq
+Intended: 4GFSK, M=4, h=0.5, pulse=gaussian BT=0.25, Rs=10000, payload='HELLO WORLD FSK'
+------------------------------------------------------------------------
+Detection      : FSK (envelope excess CV 0.000, p_fsk 1.00)
+Classification : 4GFSK
+  Evidence     : Envelope CV 0.084 vs 0.092 expected from noise alone (in-band SNR 17.7 dB, noise from guard samples) -> excess 0.000: constant envelope (FSK/CPM)
+                 Backtracking over symbol-rate hypotheses: tried 47.658 sps (none), 23.935 sps (none), 59.500 sps (none), 30.200 sps (none)
+                 PSD shows 1 distinct peak(s) (tones resolve in the PSD only for larger h; evidence only)
+                 Tone grid: M=4, h=0.479, pulse gaussian BT=0.3, re-modulation match 0.852
+Parameters     :
+  Tone count M      : 4   [joint (M, pulse) re-modulation match; IF-strobe M-level fits as evidence]
+  Symbol rate       : 8356.12 Bd  [IF transition / power-law lines, re-modulation refined (x2 of line at 47.77 sps)]
+  Samples/symbol    : 23.9346 samples  [IF transition / power-law lines, re-modulation refined (x2 of line at 47.77 sps)]
+  Modulation index h: 0.479203   [tone spacing / Rs, refined by re-modulation]
+  Tone spacing      : 4004.28 Hz  [h * Rs]
+  Peak deviation    : 6006.42 Hz  [(M-1) h Rs / 2]
+  Carrier offset    : -269.138 Hz  [occupied-band centre + tone-grid centre]
+  Pulse shape       : gaussian BT=0.3   [re-modulation match over rect / Gaussian BT hypotheses]
+  Phase continuity  : continuous (CPFSK)   [mean |IF| per symbol-phase bin (unfiltered)]
+  Es/N0             : 16.664 dB  [re-modulation residual (noise per sample x sps)]
+Sync           :
+  Boundary     : sample 10.41 of the burst (sps 23.935)
+Demodulation   :
+  discriminator  : none           mapping 'gray'
+  correlator     : none           mapping 'gray'
+  coherent-bcjr  : none           mapping 'gray'
+  Primary      : coherent-bcjr
+  Hard bits    : 111111101000000100011000...
+  Soft bits    : -0.03, -6.49, -22.87, -9.33, -95.63, -127.63, ... (LLR = ln P0/P1)
+  BER          : n/a
+  FSK error    : 20.6% (RMS IF error / peak deviation)
+  Decoded      : '��\x18R��:�;��\x03�LT��\x1d�X�M\x12�*�'
+  Status       : FAIL
+------------------------------------------------------------------------

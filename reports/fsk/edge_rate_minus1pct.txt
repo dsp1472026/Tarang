@@ -1,0 +1,36 @@
+========================================================================
+FSK DEMODULATION REPORT
+========================================================================
+File: edge_rate_minus1pct.iq
+Intended: 2FSK, M=2, h=1.0, pulse=rect, Rs=10000, payload='HELLO WORLD FSK'
+------------------------------------------------------------------------
+Detection      : FSK (envelope excess CV 0.021, p_fsk 1.00)
+Classification : 2FSK
+  Evidence     : Envelope CV 0.095 vs 0.093 expected from noise alone (in-band SNR 17.6 dB, noise from guard samples) -> excess 0.021: constant envelope (FSK/CPM)
+                 PSD shows 2 distinct peak(s) (tones resolve in the PSD only for larger h; evidence only)
+                 Tone grid: M=2, h=1.001, pulse rect, re-modulation match 0.899
+Parameters     :
+  Tone count M      : 2   [joint (M, pulse) re-modulation match; IF-strobe M-level fits as evidence]
+  Symbol rate       : 9899.9 Bd  [IF transition / power-law lines, re-modulation refined (refined best line)]
+  Samples/symbol    : 20.2022 samples  [IF transition / power-law lines, re-modulation refined (refined best line)]
+  Modulation index h: 1.00113   [tone spacing / Rs, refined by re-modulation]
+  Tone spacing      : 9911.05 Hz  [h * Rs]
+  Peak deviation    : 4955.53 Hz  [(M-1) h Rs / 2]
+  Carrier offset    : -310.051 Hz  [occupied-band centre + tone-grid centre]
+  Pulse shape       : rect   [re-modulation match over rect / Gaussian BT hypotheses]
+  Phase continuity  : continuous (CPFSK)   [mean |IF| per symbol-phase bin (unfiltered)]
+  Es/N0             : 22.5225 dB  [re-modulation residual (noise per sample x sps)]
+Sync           :
+  Boundary     : sample 0.00 of the burst (sps 20.202)
+Demodulation   :
+  discriminator  : sync-word      mapping 'gray', CRC VALID, frame BER 0/248
+  correlator     : sync-word      mapping 'gray', CRC VALID, frame BER 0/248
+  coherent-bcjr  : sync-word      mapping 'gray', CRC VALID, frame BER 0/248
+  Primary      : coherent-bcjr
+  Hard bits    : 101111111000000100000110...
+  Soft bits    : -4.13, +19.02, -385.75, -368.25, -359.70, -338.55, ... (LLR = ln P0/P1)
+  BER          : 0.00% (0/248)
+  FSK error    : 9.7% (RMS IF error / peak deviation)
+  Decoded      : 'HELLO WORLD FSK'
+  Status       : PASS
+------------------------------------------------------------------------

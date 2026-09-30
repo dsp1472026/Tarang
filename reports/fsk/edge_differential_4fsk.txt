@@ -1,0 +1,36 @@
+========================================================================
+FSK DEMODULATION REPORT
+========================================================================
+File: edge_differential_4fsk.iq
+Intended: 4FSK, M=4, h=1.0, pulse=rect, Rs=10000, payload='HELLO WORLD FSK'
+------------------------------------------------------------------------
+Detection      : FSK (envelope excess CV 0.014, p_fsk 1.00)
+Classification : 4FSK
+  Evidence     : Envelope CV 0.137 vs 0.136 expected from noise alone (in-band SNR 14.3 dB, noise from guard samples) -> excess 0.014: constant envelope (FSK/CPM)
+                 PSD shows 3 distinct peak(s) (tones resolve in the PSD only for larger h; evidence only)
+                 Tone grid: M=4, h=0.998, pulse rect, re-modulation match 0.903
+Parameters     :
+  Tone count M      : 4   [joint (M, pulse) re-modulation match; IF-strobe M-level fits as evidence]
+  Symbol rate       : 10003.7 Bd  [IF transition / power-law lines, re-modulation refined (refined best line)]
+  Samples/symbol    : 19.9927 samples  [IF transition / power-law lines, re-modulation refined (refined best line)]
+  Modulation index h: 0.998249   [tone spacing / Rs, refined by re-modulation]
+  Tone spacing      : 9986.15 Hz  [h * Rs]
+  Peak deviation    : 14979.2 Hz  [(M-1) h Rs / 2]
+  Carrier offset    : 742.573 Hz  [occupied-band centre + tone-grid centre]
+  Pulse shape       : rect   [re-modulation match over rect / Gaussian BT hypotheses]
+  Phase continuity  : continuous (CPFSK)   [mean |IF| per symbol-phase bin (unfiltered)]
+  Es/N0             : 21.8405 dB  [re-modulation residual (noise per sample x sps)]
+Sync           :
+  Boundary     : sample -1.31 of the burst (sps 19.993)
+Demodulation   :
+  discriminator  : sync-word      mapping 'gray, differential', CRC VALID, frame BER 0/248
+  correlator     : sync-word      mapping 'gray, differential', CRC VALID, frame BER 0/248
+  coherent-bcjr  : sync-word      mapping 'gray, differential', CRC VALID, frame BER 0/248
+  Primary      : coherent-bcjr
+  Hard bits    : 001111111000000100000110...
+  Soft bits    : +36.95, +4.83, -281.31, -281.31, -281.31, -281.31, ... (LLR = ln P0/P1)
+  BER          : 0.00% (0/248)
+  FSK error    : 4.9% (RMS IF error / peak deviation)
+  Decoded      : 'HELLO WORLD FSK'
+  Status       : PASS
+------------------------------------------------------------------------

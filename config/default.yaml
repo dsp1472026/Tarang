@@ -1,0 +1,17 @@
+app:
+  title: "SIH 26147 — Automated Signal Analysis System"
+  version: "0.1.0"
+  theme: "dark"
+
+dsp:
+  fft_nperseg: 1024
+  fft_overlap: 512
+  detection_threshold_db: 6.0
+  obw_percentage: 0.99
+
+models:
+  modulation_classifier_path: "modulation/models/best_modulation_model.pt"
+
+paths:
+  radioml2016: "datasets/radioml2016/"
+  radioml2018: "datasets/radioml2018/"

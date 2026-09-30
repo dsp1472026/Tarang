@@ -1,0 +1,25 @@
+{
+  "format": {
+    "files": {
+      "img_test_8x8_bpsk.iq": "ci16_le",
+      "img_test_8x8_bpsk_f32.iq": "cf32_le"
+    },
+    "interleaving": "IQIQ",
+    "sample_rate_hz": 9600.0,
+    "center_frequency_hz": 0.0,
+    "num_samples": 33504
+  },
+  "truth": {
+    "generator": "synthetic.tx_image v1",
+    "modulation": "BPSK",
+    "fec": "CC K=7 (171,133) r1/2 [NASA/CCSDS]",
+    "payload_file": "test_8x8.bmp",
+    "payload_bytes": 246,
+    "frame_bytes": 258,
+    "transmitted_bits": 4140,
+    "symbol_rate_hz": 1200.0,
+    "samples_per_symbol": 8,
+    "snr_db_esn0": 25.0,
+    "seed": 26147
+  }
+}

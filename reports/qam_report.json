@@ -1,0 +1,463 @@
+{
+ "generated": [
+  {
+   "name": "16qam_clean",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 1.76,
+   "method": "sync-word",
+   "seconds": 37.1,
+   "sps": 8.0002,
+   "sps_true": 8.0
+  },
+  {
+   "name": "16qam_impaired",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 7.43,
+   "method": "sync-word",
+   "seconds": 38.1,
+   "sps": 8.001,
+   "sps_true": 8.0
+  },
+  {
+   "name": "16qam_fracsps_bigcfo",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 5.9,
+   "method": "sync-word",
+   "seconds": 39.2,
+   "sps": 8.3333,
+   "sps_true": 8.333333333333334
+  },
+  {
+   "name": "16qam_beta025_4800bd",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 5.44,
+   "method": "sync-word",
+   "seconds": 39.9,
+   "sps": 7.9999,
+   "sps_true": 8.0
+  },
+  {
+   "name": "16qam_short_burst",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 4.94,
+   "method": "sync-word",
+   "seconds": 12.2,
+   "sps": 7.9916,
+   "sps_true": 8.0
+  },
+  {
+   "name": "64qam_clean",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 1.31,
+   "method": "sync-word",
+   "seconds": 127.8,
+   "sps": 8.0009,
+   "sps_true": 8.0
+  },
+  {
+   "name": "64qam_impaired",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 3.03,
+   "method": "sync-word",
+   "seconds": 78.9,
+   "sps": 8.0009,
+   "sps_true": 8.0
+  },
+  {
+   "name": "64qam_fracsps_bigcfo",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 2.89,
+   "method": "sync-word",
+   "seconds": 80.0,
+   "sps": 8.3308,
+   "sps_true": 8.333333333333334
+  },
+  {
+   "name": "64qam_beta025_4800bd",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 3.34,
+   "method": "sync-word",
+   "seconds": 51.1,
+   "sps": 8.0022,
+   "sps_true": 8.0
+  },
+  {
+   "name": "64qam_short_burst",
+   "truth": "64QAM",
+   "classified": "256QAM",
+   "crc": false,
+   "passed": false,
+   "evm_pct": 2.46,
+   "method": "unresolved",
+   "seconds": 32.5,
+   "sps": 57.4606,
+   "sps_true": 8.0
+  },
+  {
+   "name": "256qam_clean",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 1.34,
+   "method": "sync-word",
+   "seconds": 126.8,
+   "sps": 8.0001,
+   "sps_true": 8.0
+  },
+  {
+   "name": "256qam_impaired",
+   "truth": "256QAM",
+   "classified": "64QAM",
+   "crc": false,
+   "passed": false,
+   "evm_pct": 5.48,
+   "method": "unresolved",
+   "seconds": 70.4,
+   "sps": 48.1681,
+   "sps_true": 8.0
+  },
+  {
+   "name": "256qam_fracsps_bigcfo",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 1.85,
+   "method": "sync-word",
+   "seconds": 146.9,
+   "sps": 8.3326,
+   "sps_true": 8.333333333333334
+  },
+  {
+   "name": "256qam_beta025_4800bd",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "crc": true,
+   "passed": true,
+   "evm_pct": 1.82,
+   "method": "sync-word",
+   "seconds": 123.4,
+   "sps": 7.9987,
+   "sps_true": 8.0
+  },
+  {
+   "name": "256qam_short_burst",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "crc": false,
+   "passed": false,
+   "evm_pct": 3.36,
+   "method": "text-heuristic",
+   "seconds": 35.5,
+   "sps": 46.6156,
+   "sps_true": 8.0
+  }
+ ],
+ "legacy": [
+  {
+   "file": "all_modulations_output/16QAM.iq",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 0.84,
+    "mapping": "Q-first, I natural-asc, Q natural-asc"
+   },
+   "blind": {
+    "text": "YXtLeo)\\ud|QK(U|qj\u0007(lAUw(\\ALc)y|xH",
+    "ok": false,
+    "char_errors": 35,
+    "method": "text-heuristic",
+    "evm_pct": 0.84,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 65.0
+  },
+  {
+   "file": "all_modulations_output/16QAM.wav",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.54,
+    "mapping": "I-first, I natural-asc, Q natural-asc"
+   },
+   "blind": {
+    "text": "CSMFLT0WM\\EKR0OUIP.0DJ_]0GJVH0QUABN",
+    "ok": false,
+    "char_errors": 27,
+    "method": "unresolved",
+    "evm_pct": 1.54,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 75.3
+  },
+  {
+   "file": "all_modulations_output/64QAM.iq",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.2,
+    "mapping": "Q-first, I natural-asc, Q natural-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 1.2,
+    "mapping": "Q-first, I natural-asc, Q natural-asc"
+   },
+   "seconds": 40.0
+  },
+  {
+   "file": "all_modulations_output/64QAM.wav",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "FRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": false,
+    "char_errors": 1,
+    "method": "known-payload",
+    "evm_pct": 3.03,
+    "mapping": "I-first, I natural-asc, Q natural-asc"
+   },
+   "blind": {
+    "text": "FRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": false,
+    "char_errors": 1,
+    "method": "text-heuristic",
+    "evm_pct": 3.03,
+    "mapping": "I-first, I natural-asc, Q natural-asc"
+   },
+   "seconds": 55.0
+  },
+  {
+   "file": "all_modulations_output/256QAM.iq",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 0.78,
+    "mapping": "Q-first, I natural-asc, Q natural-asc"
+   },
+   "blind": {
+    "text": "c}dlfp5}lwibp?g{`~ 6ho}p5hdz`1wqbn",
+    "ok": false,
+    "char_errors": 35,
+    "method": "text-heuristic",
+    "evm_pct": 0.78,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 26.9
+  },
+  {
+   "file": "all_modulations_output/256QAM.wav",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "CRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": false,
+    "char_errors": 1,
+    "method": "known-payload",
+    "evm_pct": 1.54,
+    "mapping": "I-first, I natural-desc, Q natural-desc"
+   },
+   "blind": {
+    "text": "bsmdlv0um|gir0owkp.0fh\u007f}0ehtj0qwabn",
+    "ok": false,
+    "char_errors": 35,
+    "method": "text-heuristic",
+    "evm_pct": 1.54,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 25.7
+  },
+  {
+   "file": "qam_pangram_all_files/16qam_bright_vixens.iq",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.39,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 1.39,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 57.6
+  },
+  {
+   "file": "qam_pangram_all_files/16qam_bright_vixens.wav",
+   "truth": "16QAM",
+   "classified": "16QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.13,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 1.13,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 57.0
+  },
+  {
+   "file": "qam_pangram_all_files/64qam_bright_vixens.iq",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.62,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 1.62,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "seconds": 43.5
+  },
+  {
+   "file": "qam_pangram_all_files/64qam_bright_vixens.wav",
+   "truth": "64QAM",
+   "classified": "64QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.04,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 1.04,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "seconds": 44.2
+  },
+  {
+   "file": "qam_pangram_all_files/256qam_bright_vixens.iq",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 1.12,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 1.12,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 38.8
+  },
+  {
+   "file": "qam_pangram_all_files/256qam_bright_vixens.wav",
+   "truth": "256QAM",
+   "classified": "256QAM",
+   "cls_ok": true,
+   "known": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "known-payload",
+    "evm_pct": 0.81,
+    "mapping": "I-first, I gray-asc, Q gray-asc"
+   },
+   "blind": {
+    "text": "BRIGHT VIXENS JUMP; DOZY FOWL QUACK",
+    "ok": true,
+    "char_errors": 0,
+    "method": "text-heuristic",
+    "evm_pct": 0.81,
+    "mapping": "Gray (standard)"
+   },
+   "seconds": 34.4
+  }
+ ],
+ "sweep": []
+}

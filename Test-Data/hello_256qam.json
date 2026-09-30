@@ -1,0 +1,8 @@
+{
+  "modulation": "256QAM",
+  "baud": 1200,
+  "sps": 8,
+  "snr_db": 20.0,
+  "sample_rate": 9600,
+  "expected_rings": 16
+}
